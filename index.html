@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML&CSSの復習</title>
+    <link rel="stylesheet" href="learn.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">HTML&CSSを学ぶ！</div>
+      <div class="header-list">
+        <ul>
+          <li>
+            <a href="https://moable.github.io/basic.html/">基礎編</a>
+          </li>
+          <li>
+            <a href="https://moable.github.io/application.html/">応用編</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="copy-container">
+        <h1><span>HTML&CSS</span>の基礎を復習しよう！</h1>
+      </div>
+      <div class="contents">
+        <h2>1.基本事項の復習</h2>
+        <div class="learn-tag">
+          <h3>1-1.tagについて学ぼう！</h3>
+          <p class="explain">
+            はじめにHTMLでコードを書く際のルールとして、テキストをtagで囲うというルール
+            があります。多くのtagはペアで使われ、テキストの始めのtagをopening tag
+            といい、終わりのtagはclosing tagと呼ばれています。終わりのtagには<span>"/"
+            </span>が必要になるので、忘れないようにしましょう。
+            tagについては以下の種類があります。
+          </p>
+          <ul>
+            <div class="tag-box">
+              <li>heading tag</li>
+              <p>
+                heading tagは<span>h1~h6</span>まで大きさの範囲があり、h1が最も大きく、
+                h6が最も小さい仕様になっています。
+              </p>
+              <div class="png1">
+                <img src="heading_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="heading_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>paragraph tag</li>
+              <p>
+                paragraph tagは文章を書き込む仕様になっています。heading tagとの違いは
+                大きさの範囲がないことです。
+              </p>
+              <div class="png1">
+                <img src="paragraph_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="paragraph_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>anchor tag</li>
+              <p>
+                anchor tagはリンクを表示することが可能なtagです。
+              </p>
+              <div class="png1">
+                <img src="anchor_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="anchor_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>image tag</li>
+              <p>
+                image tagは画像を表示するために用いられます。また、src属性の後にURLや画像ファイル
+                を記述することで画像を表示できます。
+              </p>
+              <div class="png1">
+                <img src="image_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="image_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>unordered list tagとlist tag</li>
+              <p>
+                unordered list tagとlist tagで箇条書きのリストを作れます。
+              </p>
+              <div class="png1">
+                <img src="ulli_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="ulli_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>division tag</li>
+              <p>
+                div tag は要素を分類するときに使われます。
+                div tagで分類することでCSSを適用させたり、変更しやすくなります。
+              </p>
+              <div class="png1">
+                <img src="division_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="division_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>span tag</li>
+              <p>
+                span tagはテキストの一部分だけを変更したい場合に便利です。変更したい操作はCSSで行います。
+              </p>
+              <div class="png1">
+                <img src="span_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="span_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>input tag</li>
+              <p>
+                input tagは１行のテキストを受け取る場合に使います。input tagはテキストの終わりに
+                tagが必要ないので注意が必要です。
+              </p>
+              <div class="png1">
+                <img src="input_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="input_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+            <div class="tag-box">
+              <li>textarea tag</li>
+              <p>
+                textarea tagは複数行のテキストを受け取る場合に使います。input tagと
+                textarea tagの違いを理解して使っていきましょう。
+              </p>
+              <div class="png1">
+                <img src="textarea_1.png">
+                <p>コード画面</p>
+              </div>
+              <div class="png2">
+                <img src="textarea_2.png">
+                <p>表示画面</p>
+              </div>
+            </div>
+          </ul>
+          <h3 class="tips">属性について
+            <p>
+              HTMLにはherf<span>(Hypertext Reference)</span>やsrc<span>(source)</span>
+              などの属性<span>(attribute)</span>を明示する必要があり、それらは必ずダブルクォーテーションで囲うというルールがあります。
+            </p>
+          </h3>
+          <h3 class="tips">ol tag<span>(ordered list tag)</span>
+            <p>
+               ol tagは順序付けされたリストを制作するときに使います。
+               ul tag<span>(unorderded list tag)</span>と使い分けが大事です。
+            </p>
+          </h3>
+        </div>
+        <div class="learn-css">
+          <h3>1-2.CSSについて学ぼう！</h3>
+          <p class="explain">
+            CSSとはHTMLのデザインを変更することができる言語であり、色、大きさ、空白などの
+            要素を変えられます。HTMLの”どこの”、”何を”、”どのように”を明記することが必要です。
+            以下では、CSSの特性について復習しよう。
+          </p>
+          <h3 class="tips">CSSの文法
+            <p>
+              CSSの文法は変更したい部分の宣言の後、次の行のはじめにはindentが必要であり、
+              <span>"何を"</span>の後に<span>":"</span>、<span>"どのように"</span>
+              の後に<span>”；”</span>が必要です。
+            </p>
+          </h3>
+          <ul>
+            <div class="pro-box">
+              <li>color</li>
+              <p>
+                colorプロパティは16進数、または英語表記の色名を記述すればhtmlの要素の色を変えることができます。
+              </P>
+            </div>
+            <div class="pro-box">
+              <li>font-size</li>
+              <p>
+                font-sizeプロパティはフォントのサイズを変えることができます。通常、
+                フォントのサイズを変更する場合の単位はpx(pixel)です。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>font-family</li>
+              <p>
+                font-familyプロパティは<span>"font-family:font name;"</span>
+                と設定することによって,フォントのタイプを明示することができます。
+              </p>
+              <p>
+                フォント名が空白を含んでいる場合は、ダブルクォーツでフォント名を囲います。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>background-color</li>
+              <p>
+                background-colorプロパティは背景の色を変えることができます。#ddddddのように
+                同じ文字が続く場合は、#dddのように短く記述することができます。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>width and height</li>
+              <p>
+                widthプロパティとheightプロパティは要素の高さと幅を変えることができます。
+                これらのプロパティもfont-sizeプロパティと同様に単位としてpxが必要になります。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>list-style</li>
+              <p>
+                list要素にlist-styleプロパティを適用させることによって、様々な操作ができます。
+                例えば、"list-style:none;"とすることで箇条書きの黒丸を消すことができます。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>float</li>
+              <p>
+                一般的にHTMLで書かれた要素は垂直に並びます。並行に要素を並べ替えたいときに
+                floatプロパティは用いられます。"float:left;"とすれば、webページの
+                左側に並行に表示されます
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>padding</li>
+              <p>
+                要素ごとのスペースを適切な位置に調整したい場合は、paddingプロパティが便利です。
+                "padding:Npx"とすることで、四方端からNpx空間を作って要素を配置することができます。
+              </p>
+              <p>
+                "padding-top","padding-right","padding-bottom","padding-left"と
+                空間を作る位置を一方だけに特定することもできます。
+              </p>
+              <p>
+                四方位から指定したい場合は、上から時計回りで設定することができます。また、
+                上下と左右の２つを適用させることもできます。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>border</li>
+              <p>
+                線の幅、タイプ、色を指定し、borderプロパティを用いるとボーダーを配置できます。
+                borderプロパティであれば四方に線が配置されますが、特定の場所にだけ配置したい場合は、
+                "border-top","border-right","border-bottom","border-left"で明示します。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>margin</li>
+              <p>
+                marginプロパティはpaddingプロパティと同様に空間を作るプロパティです。
+                指定する要素や書式も同じなので、２つの違いを説明します。
+              </p>
+              <p>
+                例えば、borderプロパティで全方位に線を描いたとします。paddingプロパティは線の
+                内側の空間を定めるのに対して、marginプロパティは線の外側の空間を定めるプロパティです。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>background-image</li>
+              <p>
+                background-imageプロパティは背景に画像を挿入します。
+                "background-image:url(URL);"と明示します。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>background-size</li>
+              <p>
+                background-imageプロパティで配置した画像は、スペース全体を覆うまで繰り返し
+                配置されます。１つの画像だけで配置したいときは"background-size:cover;"とします。
+                (heightは定義する必要があります。)
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>opacity</li>
+              <p>opacityプロパティは透明な要素を作ることができます。引数は0.0から1.0まであり、
+                0.0が一番透明です。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>letter-spacing</li>
+              <p>
+                letter-spacingプロパティは文字の間隔を明示することができます。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>display</li>
+              <p>
+                displayプロパティは要素を"block","inline-block","inline"に変更できる。a tagは
+                サイズや空間を変えることができないので、block elementにして変更するときに用いられる。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>border-radius</li>
+              <p>
+                border-radiusプロパティは要素の角を丸くします。数値が大きくなるほど、角は丸くなります。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>text-align</li>
+              <p>
+                text-alignプロパティはinline elementやinline-block elementを並び替えます。
+                引数は"left","center","right"です。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>line-height</li>
+              <p>
+                line-heightプロパティは１行が占める高さを明示することができます。高さは変更されても
+                要素は中心に配置されます。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>font-weight</li>
+              <p>
+                font-weightプロパティはテキストの厚さを変えることができます。引数はnormalや
+                boldです。
+              </p>
+              <p>
+                h1~h6はデフォルトでboldに設定されています。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>box-shadow</li>
+              <p>
+                box-shadowプロパティは要素に影を加える場合に使われます。水平方向の長さ、
+                垂直方向の長さ、色の３つの引数を指定することによって使うことができます。
+              </p>
+            </div>
+            <div class="pro-box">
+              <li>z-index</li>
+              <p>
+                z-indexプロパティは要素の積み重ねに順番を決めることができます。数値の大きい方が上面に
+                表示されます。z-indexはpositionプロパティと合わせて使うことに注意してください。
+              </p>
+            </div>
+          </ul>
+          <h3 class="tips">特定の要素にCSSを適用させる方法
+            <p>
+              class属性を用いてラベル化された要素だけを変更することが可能になります。HTNLのタグに
+              classを加え、CSSでクラス名を明示する。このとき、クラス名のはじめに<span>"."
+              </span>が必要になるので忘れないように。
+            </p>
+            <p>
+              また、複数のHTMLの要素に同じクラス名をつけると、CSSでの変更が同じクラス名
+              の要素全てに適用されます。異なるtag同士に同じプロパティを適用させたい場合は、
+              複数のtagをコンマ(,)で区切ります。
+            </p>
+          </h3>
+          <h3 class="tips">The Box Model
+            <p>
+              線で要素を囲うときは、borderとpaddingとmarginの３つのプロパティを用いて作ります。
+            </p>
+          </h3>
+          <h3 class="tips">Submit Botton
+            <p>
+              input要素の中にtype属性を加えることによって送信ボタンを作ることができます。
+              type属性をsubmitにすることでinput要素が送信ボタンになります。表示されるテキストは
+              デフォルトで<span>”Submit”</span>になっています。もし、テキストの内容を変えたい場合は
+              value属性で変更してください。
+            </p>
+          </h3>
+          <h3 class="tips">margin:0 autoとtext-align:centerの違い
+            <p>
+              要素を中心に配置できるプロパティとしてmargin:0 autoとtext-align:centerを学びました。
+              marginプロパティはcontainersのようなblock elementに用います。一方、text-alignプロパティは
+              ボタンやテキストなどのinlineやinline-block elementに用います。
+            </p>
+          </h3>
+        </div>
+        <h2>2.HTML&CSSでウェブサイトを作る流れについて</h2>
+        <div class="make-htmlcss">
+          <h3>2-1.HTML&CSSの制作手順</h3>
+          <h3 class="tips">コメントについて
+            <p>
+              多くのプログラミング言語ではコメントを残したいときの記法があります。HTMLの場合
+              テキストを<span>＜！ーー（テキスト）ーー＞</span>で囲うとコメントを
+              残すことが可能です。
+            </p>
+            <p>
+              また、CSSの場合は<span>/*（テキスト）*/</span>で囲うとコメントを残すことが可能です。
+            </p>
+          </h3>
+          <p class="explain">実際のHTMLテキストは以下のようなルールがあります。確認していきましょう。</p>
+          <ol><!--リストスタイルを数字にしたい場合は<ol>-->
+            <li>
+              ＜head＞、＜body＞要素が＜HTML＞要素の中に必要とされています。＜head＞には
+              テキストの情報を記載します。＜body＞はディスプレイで表示される内容を記載します。
+            </li>
+            <li>
+              全てのHTMLテキストは＜！DOCTYPE html＞を宣言してから始めなければいけません。
+              （HTMLのバージョンによって異なりますが、最新のHTMLなら問題ありません。）
+            </li>
+            <li>
+              ＜head＞要素に記載されるHTMLの設定はブラウザ上には表示されません。ここには文字コード
+              、ウェブのタイトル、CSSファイルのリンクの３つを明示する必要があります。
+              （覚える必要はありませんが、意味を理解する必要があります。）
+              <ul class="head-rule">
+                <li>
+                  文字コードとして、charset属性に＜meta charset="utf-8"＞を明示することに
+                  よって文字化けを防ぎます。
+                </li>
+                <li>
+                  title tag内にあるテキストはブラウザのタブで表示されます。
+                </li>
+                <li>
+                  HTMLでherf属性の記載と＜link rel="stylesheet"＞を定義することによって
+                  HTMLとCSSを関連させてウェブを作ることが可能になります。
+                </li>
+              </ul>
+            </li>
+            <li>
+              レイアウトはウェブを作る上で、最も重要な部分の１つです。レイアウトは主に３つの
+              部分で構成されています。
+              <ul class="layout">
+                <li>header</li>
+                <p>
+                  headerにはlogoとlistをdivでグループ分けして表示します。その後、logoとlistを
+                  floatプロパティやpaddingプロパティで調整していきます。
+                </p>
+                <li>main</li>
+                <p>
+                  div tagで"copy-container","contents","contact-form"をクラス分け
+                  していきます。それぞれの部分ごとにclassで分類し、CSSでコーディングしていきます。
+                </p>
+                <li>footer</li>
+                <p>
+                  hooterにも同様にlogoとlistを配置していきます。footerは"float:left;"で
+                  右側に配置します。またheaderとfooterでlogoとlistを配置する場所が異なります。
+                  この場合、CSSでclass名の後に、スペースを入れtagを記載することで、特定の要素だけ
+                  変更を加えることができます。
+                </p>
+              </ul>
+            </li>
+          </ol>
+          <div class="inquiry-form">
+            <h3>2-2.質問フォームの制作</h3>
+            <p class="explain">
+              text tagやinput tagを用いて、入力欄を制作していきます。入力欄の作り方は
+              1-1.tagについて学ぼう！を参照してください。
+            </p>
+          </div>
+        </div>
+        <h2>3.HTML&CSSの応用編</h2>
+        <div class="application">
+          <h3>3-1.HTML$CSSの応用</h3>
+          <ul>
+            <li>header tagとfooter tag</li>
+            <p>
+              前のレッスンではdiv tagを用いてclassでheaderとfooterを作りました。
+              しかし、一般的にはheader tagとfooter tagがよく使われます。
+            </p>
+            <li>要素を中心に配置する</li>
+            <p>
+              marginのleftとrightをautoとすることによって要素を中心に配置することができます。
+              このとき、widthは明示していないといけません。
+            </p>
+            <li>anchor tagを利用する</li>
+            <p>
+              anchor tagはサイズや空間を明示することができません。この問題を解決する方法として
+              a tagで作った要素はinline elementであり、これをblock elementにすることで
+              サイズやスペースを明示できます。a tagはデフォルトでinline elementsなのでdisplay
+              プロパティで変更することができます。
+            </p>
+            <li>複数のクラスで同じプロパティを適用する方法</li>
+            <p>
+              CSSのプロパティがわずかに異なるいくつかの要素があるとき,共通のCSSと個々のCSS
+              を異なるクラスとして抜き出すことができます。クラス名をスペースで分けることで
+              複数のクラスを明示できます。
+            </p>
+            <li>アイコンフォントを使う方法</li>
+            <p>
+              head tag内でアイコンフォントをダウンロードすれば、アイコンフォントが使えるようになります。
+              使用するときはspan tag内でfa classとfa-"iconname" classを明示します。
+            </p>
+            <li>rgbとrgba</li>
+            <p>
+              rgbは３つの引数の組み合わせで色を明示する方法です。（例えば、rgb(73,201,192)
+              と#49C9C0は同色）プログラミングでは１６進数で色を表します。
+            </p>
+            <p>
+              rgbaは色の透明度を明示したい場合に使われます。４つ目の引数は透明度で0.0から1.0までで、
+              0.0が一番透明です。
+            </p>
+            <li>login linkの作り方</li>
+            <p>
+              anchor tagを用いてログインボタンは作れます。このとき、herf属性は"#"としてください。
+            </p>
+            <p>
+              また、anchor tagはinline elementなのでテキスト部分しかクリックすることができません。なので
+              "display:blockb"として、block element全体がクリックできるように修正が必要です。
+            </p>
+            <li>サイズを％で明示する</li>
+            <p>
+              pxの代わりに％を使うと、parent elementの幅のサイズから計算してサイズを決めることができます。
+              高さに関しても適用できます。
+            </p>
+            <li>要素を重ねる</li>
+            <p>
+              通常のHTMLでは、要素を重ねることはできません。CSSで"position:absolute"を使えば、
+              要素の上に要素を重ねることができます。要素の左上をtopプロパティとleftプロパティで
+              明示して位置を決めることができます。
+            </p>
+            <p>
+              CSSで、parent element classに"position:relative"を明示することで、
+              "position:absolute"で決めたtopプロパティとleftプロパティをparent elementの
+              左上を基準に動かすことができます。
+            </p>
+            <li>要素を固定する</li>
+            <p>
+              画面を下へスクロールしたとき、画面の上部にヘッダーを固定したい場合は、どうすればいいか
+              を学んでいきます。"position:fixed"を使うとスクリーンの特定の位置に要素を固定することができます。
+              固定する位置はtopプロパティとleftプロパティで指定できます。
+            </p>
+          </ul>
+        </div><!--application-->
+      </div><!--contents-->
+      <div class="progate">
+        <h2>ウェブページ制作例</h2>
+        <p>
+          これまでのtagやプロパティを利用すれば、以下のようなウェブページが作れます。
+        </p>
+        <a href="https://moable.github.io/basic.html/">基礎編</a>
+        <a href="https://moable.github.io/application.html/">応用編</a>
+      </div>
+    </div><!--main-->
+    <div class="contact-form">
+      <h3 class="section-title">Contact us</h3>
+      <p>Email</p>
+      <input>
+      <p>Message</p>
+      <textarea></textarea>
+      <p>*Required fields must be filled</p>
+      <input class="contact-us" type="submit" value="Send">
+    </div>
+    <div class="footer">
+      <div class="footer-logo">HTML&CSSを学ぶ！</div>
+      <div class="footer-list">
+        <ul>
+          <li>
+            <a href="https://moable.github.io/basic.html/">基礎編</a>
+          </li>
+          <li>
+            <a href="https://moable.github.io/application.html/">応用編</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
