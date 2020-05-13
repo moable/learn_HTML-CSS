@@ -32,7 +32,7 @@ body{
 }
 .copy-container{
   /*background-imageにはopacityプロパティはない*/
-  background-image:url(background.png);
+  background-image:url(https://github.com/moable/learn_HTML-CSS.html/blob/master/background.png?raw=true);
   background-size:cover;
   padding:0 auto;
   margin:0 auto;
