@@ -10,20 +10,29 @@ body{
   font-size:36px;
   padding:20px 40px 0px 40px;
 }
-.header-list{
-  float:left;
+.btn {
+  float:right;
+  padding:16px 24px;
+  color:white;
+  display:block;
+  opacity:0.8;
+  border-radius:4px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:16px;
+  line-height:20px;
 }
-.header-list li{
-  list-style:none;
-  float:left;
-  padding:33px 20px;
+.twitter{
+  letter-spacing: 1.5px;
+  background-color:#55acee;
 }
-.header-list a{
-  color:black
+.insta{
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/
 }
 .copy-container{
   /*background-imageにはopacityプロパティはない*/
-  background-image:url(zebra.png);
+  background-image:url(background.png);
   background-size:cover;
   padding:0 auto;
   margin:0 auto;
@@ -34,17 +43,21 @@ body{
   width:80%;
   text-align:center;
 }
-.copy-container h3{
-  font-size:30px;
-}
 .copy-container span{
   color:#ff4a4a;
 }
+.title li{
+  padding:5px;
+  font-size:20px;
+}
+.option ul{
+  list-style:none;
+}
 .contents h2{
   font-size:60px;
+  text-align:center;
   border-bottom:2px solid black;
-  margin:100px 100px;
-  padding:0px 100px;
+  background-color:skyblue;
 }
 .contents h3{
   font-size:40px;
@@ -52,10 +65,12 @@ body{
 .explain{
   font-size:20px;
   font-weight:bold;
+  padding-right:400px;
 }
 .learn-tag ul li,.learn-css ul li{
   font-size:30px;
   color:red;
+  list-style:none;
 }
 .learn-tag ul p,.learn-css ul p{
   font-size:20px;
@@ -105,7 +120,7 @@ body{
   color:blue;
 }
 .tips span{
-  color:#a9ceec;
+  color:gray;
 }
 .make-htmlcss ol{
   list-style-type:decimal;
@@ -149,6 +164,12 @@ body{
 .progate a{
   font-size:30px;
   padding:30px;
+}
+.inquiry{
+  width:600px;
+  padding:20px;
+  margin-top:20px;
+  background-color:yellow;
 }
 .footer{
   background-color:#2f5167;
