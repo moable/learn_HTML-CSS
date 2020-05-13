@@ -4,11 +4,26 @@
     <meta charset="utf-8">
     <title>HTML&CSSの復習</title>
     <link rel="stylesheet" href="learn.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <link  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   </head>
   <body>
     <div class="header">
       <div class="header-logo">HTML&CSSを学ぶ！</div>
-      <div class="header-list">
+      <div class="header-icon">
+        <a href="https://twitter.com/zl4Plz9kHlqVLve/" class="btn twitter"><span i class="fab fa-twitter fa-2x"></span>
+          Twitter</a>
+        <a href="https://www.instagram.com/ysk1089/" class="btn insta"><span i class="fab fa-instagram fa-2x"></span>
+          Instagram</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1><span>HTML&CSS</span>の基礎を復習しよう！</h1>
+      </div>
+      <div class="progate">
+        <p>progateのアプリ、またはウェブサイトで以下のウェブページが作れます。
         <ul>
           <li>
             <a href="https://moable.github.io/basic.html/">基礎編</a>
@@ -16,21 +31,50 @@
           <li>
             <a href="https://moable.github.io/application.html/">応用編</a>
           </li>
+          <li>
+            <a href="https://moable.github.io/responsible_application.html/.">レスポンシブ</a>
+          </li>
         </ul>
       </div>
-    </div>
-    <div class="main">
-      <div class="copy-container">
-        <h1><span>HTML&CSS</span>の基礎を復習しよう！</h1>
+      <div class="title">
+        <h2>1.基本事項の復習</h2>
+        <ul>
+          <li>
+          <a href="#tag">1-1.tagについて学ぼう！</a>
+          </li>
+          <li>
+          <a href="#css">1-2.CSSについて学ぼう！</a>
+          </li>
+        </ul>
+        <h2>2.HTML&CSSでウェブサイトを作る流れについて</h2>
+        <ul>
+          <li>
+          <a href="#pro">2-1.HTML&CSSの制作手順</a><!--procedure-->
+          </li>
+          <li>
+          <a href="#inq">2-2.質問フォームの制作</a><!--inquiry-->
+          </li>
+        </ul>
+        <div class="option">
+          <ul>
+            <li>
+            <a href="#app">3.HTML&CSSの応用編</a>
+            </li>
+            <li>
+            <a href="#res">4.レスポンシブなウェブページの制作</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div class="contents">
         <h2>1.基本事項の復習</h2>
         <div class="learn-tag">
-          <h3>1-1.tagについて学ぼう！</h3>
+          <h3 id="tag">1-1.tagについて学ぼう！</h3>
           <p class="explain">
             はじめにHTMLでコードを書く際のルールとして、テキストをtagで囲うというルール
             があります。多くのtagはペアで使われ、テキストの始めのtagをopening tag
-            といい、終わりのtagはclosing tagと呼ばれています。終わりのtagには<span>"/"
+            といい、終わりのtagはclosing tagと呼ばれています。終わりのtagには<span> /
             </span>が必要になるので、忘れないようにしましょう。
             tagについては以下の種類があります。
           </p>
@@ -182,7 +226,7 @@
           </h3>
         </div>
         <div class="learn-css">
-          <h3>1-2.CSSについて学ぼう！</h3>
+          <h3 id="css">1-2.CSSについて学ぼう！</h3>
           <p class="explain">
             CSSとはHTMLのデザインを変更することができる言語であり、色、大きさ、空白などの
             要素を変えられます。HTMLの”どこの”、”何を”、”どのように”を明記することが必要です。
@@ -191,8 +235,8 @@
           <h3 class="tips">CSSの文法
             <p>
               CSSの文法は変更したい部分の宣言の後、次の行のはじめにはindentが必要であり、
-              <span>"何を"</span>の後に<span>":"</span>、<span>"どのように"</span>
-              の後に<span>”；”</span>が必要です。
+              <span>何を</span>の後に<span>:</span>、<span>どのように</span>
+              の後に<span>；</span>が必要です。使い方を学んでいきましょう。
             </p>
           </h3>
           <ul>
@@ -364,7 +408,7 @@
           <h3 class="tips">特定の要素にCSSを適用させる方法
             <p>
               class属性を用いてラベル化された要素だけを変更することが可能になります。HTNLのタグに
-              classを加え、CSSでクラス名を明示する。このとき、クラス名のはじめに<span>"."
+              classを加え、CSSでクラス名を明示する。このとき、クラス名のはじめに<span>.
               </span>が必要になるので忘れないように。
             </p>
             <p>
@@ -382,7 +426,7 @@
             <p>
               input要素の中にtype属性を加えることによって送信ボタンを作ることができます。
               type属性をsubmitにすることでinput要素が送信ボタンになります。表示されるテキストは
-              デフォルトで<span>”Submit”</span>になっています。もし、テキストの内容を変えたい場合は
+              デフォルトで<span>Submit</span>になっています。もし、テキストの内容を変えたい場合は
               value属性で変更してください。
             </p>
           </h3>
@@ -396,7 +440,7 @@
         </div>
         <h2>2.HTML&CSSでウェブサイトを作る流れについて</h2>
         <div class="make-htmlcss">
-          <h3>2-1.HTML&CSSの制作手順</h3>
+          <h3 id="pro">2-1.HTML&CSSの制作手順</h3>
           <h3 class="tips">コメントについて
             <p>
               多くのプログラミング言語ではコメントを残したいときの記法があります。HTMLの場合
@@ -430,7 +474,7 @@
                   title tag内にあるテキストはブラウザのタブで表示されます。
                 </li>
                 <li>
-                  HTMLでherf属性の記載と＜link rel="stylesheet"＞を定義することによって
+                  HTMLでhref属性[href="（CSSの名称).css"]の記載と＜link rel="stylesheet"＞を定義することによって
                   HTMLとCSSを関連させてウェブを作ることが可能になります。
                 </li>
               </ul>
@@ -460,16 +504,17 @@
             </li>
           </ol>
           <div class="inquiry-form">
-            <h3>2-2.質問フォームの制作</h3>
-            <p class="explain">
-              text tagやinput tagを用いて、入力欄を制作していきます。入力欄の作り方は
-              1-1.tagについて学ぼう！を参照してください。
-            </p>
+            <h3 id="inq">2-2.質問フォームの制作</h3>
+            <div class="explain">
+              <p>text tagやinput tagを用いて、入力欄を制作していきます。入力欄の作り方は</p>
+              <a href="#tag">1-1.tagについて学ぼう！</a>
+              <p>を参照してください。</p>
+            </div>
           </div>
         </div>
-        <h2>3.HTML&CSSの応用編</h2>
+        <h2 id="app">3.HTML&CSSの応用編</h2>
         <div class="application">
-          <h3>3-1.HTML$CSSの応用</h3>
+          <h3>3-1.HTML＆CSSの応用</h3>
           <ul>
             <li>header tagとfooter tag</li>
             <p>
@@ -510,7 +555,7 @@
             </p>
             <li>login linkの作り方</li>
             <p>
-              anchor tagを用いてログインボタンは作れます。このとき、herf属性は"#"としてください。
+              anchor tagを用いてログインボタンは作れます。このとき、herf属性は"ログイン先のURL"としてください。
             </p>
             <p>
               また、anchor tagはinline elementなのでテキスト部分しかクリックすることができません。なので
@@ -540,6 +585,10 @@
             </p>
           </ul>
         </div><!--application-->
+        <div class="learn_responsive">
+          <h2 id="res">4.レスポンシブなウェブサイトを作る</h2>
+          <h3>様々な大きさのデバイスに対応する</h3>
+        </div><!--responsive-->
       </div><!--contents-->
       <div class="progate">
         <h2>ウェブページ制作例</h2>
@@ -548,9 +597,14 @@
         </p>
         <a href="https://moable.github.io/basic.html/">基礎編</a>
         <a href="https://moable.github.io/application.html/">応用編</a>
+        <a href=" https://moable.github.io/responsible_application.html/.">レスポンシブ</a>
       </div>
     </div><!--main-->
     <div class="contact-form">
+      <div class="inquiry">
+        <a href="#inq">2-2.質問フォームの制作</a>
+        <p>で学んだ手順で下記のような質問フォームが作れます。</p>
+      </div>
       <h3 class="section-title">Contact us</h3>
       <p>Email</p>
       <input>
@@ -569,6 +623,8 @@
           <li>
             <a href="https://moable.github.io/application.html/">応用編</a>
           </li>
+          <li>
+            <a href=" https://moable.github.io/responsible_application.html/.">レスポンシブ</a>
         </ul>
       </div>
     </div>
